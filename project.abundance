@@ -2318,6 +2318,12 @@
       "y": 0.7801204819277108,
       "uniqueID": "id-747",
       "name": "Braces",
+      "ioValues": [
+        {
+          "name": "Total_Depth",
+          "ioValue": 33
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -2341,7 +2347,7 @@
           "ioValues": [
             {
               "name": "part_width",
-              "ioValue": 3
+              "ioValue": 4
             },
             {
               "name": "width_clear",
@@ -3322,7 +3328,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 48,
+                      "ioValue": 50,
                       "currentEquation": "Total_Height*2 + part_width*2"
                     }
                   ]
@@ -3373,7 +3379,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": -24,
+                      "ioValue": -25,
                       "currentEquation": "-Total_Height - part_width"
                     },
                     {
@@ -3414,7 +3420,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": -1.5,
+                      "ioValue": -2,
                       "currentEquation": "-part_width/2"
                     },
                     {
@@ -3436,7 +3442,7 @@
                     {
                       "name": "Shape 1",
                       "ioValue": {
-                        "geometry": "move-cut-cut-rectangle-3-8.4-move-rectangle-1.5-1.5--1.5--4.2-0-move-rectangle-1.5-1.5-1.5--4.2-0--1.5--4.2-0",
+                        "geometry": "move-cut-cut-rectangle-4-8.4-move-rectangle-1.5-1.5--2--4.2-0-move-rectangle-1.5-1.5-2--4.2-0--2--4.2-0",
                         "dimension": "2D",
                         "plane": {
                           "origin": [
@@ -3463,7 +3469,7 @@
                     {
                       "name": "Shape 3",
                       "ioValue": {
-                        "geometry": "intersect-move-cut-circle-24-circle-21--24-0-0-move-rectangle-14-14-0-7-0",
+                        "geometry": "intersect-move-cut-circle-25-circle-21--25-0-0-move-rectangle-14-14-0-7-0",
                         "tags": [],
                         "color": "#aad7f2",
                         "plane": {
@@ -3694,7 +3700,7 @@
                       "ioValues": [
                         {
                           "name": "x length",
-                          "ioValue": 3,
+                          "ioValue": 4,
                           "currentEquation": "part_width"
                         },
                         {
@@ -3734,7 +3740,7 @@
                         },
                         {
                           "name": "xDist",
-                          "ioValue": 1.5,
+                          "ioValue": 2,
                           "currentEquation": "part_width/2"
                         },
                         {
@@ -3760,7 +3766,7 @@
                         },
                         {
                           "name": "xDist",
-                          "ioValue": -1.5,
+                          "ioValue": -2,
                           "currentEquation": "-part_width/2"
                         },
                         {
@@ -4033,14 +4039,14 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.2330508474576271,
-          "y": 0.7108433734939759,
+          "x": 0.22951977401129944,
+          "y": 0.7048192771084337,
           "uniqueID": "id-1051",
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 73,
-              "currentEquation": "Total_Width"
+              "ioValue": 70,
+              "currentEquation": "Total_Width - 3"
             },
             {
               "name": "y length",
@@ -4051,8 +4057,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.4216101694915254,
-          "y": 0.6204819277108434,
+          "x": 0.42443502824858753,
+          "y": 0.5512048192771084,
           "uniqueID": "id-1055",
           "ioValues": [
             {
@@ -4068,8 +4074,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.6546610169491525,
-          "y": 0.35542168674698793,
+          "x": 0.6892655367231638,
+          "y": 0.3283132530120482,
           "uniqueID": "id-1059",
           "ioValues": [
             {
@@ -4079,14 +4085,67 @@
             {
               "name": "Shape 2",
               "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
             }
           ]
         },
         {
           "atomType": "Move",
-          "x": 0.5805084745762712,
-          "y": 0.6204819277108434,
+          "x": 0.5826271186440678,
+          "y": 0.4126506024096385,
           "uniqueID": "id-1063",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "yDist",
+              "ioValue": -12.5
+            },
+            {
+              "name": "zDist",
+              "ioValue": 10,
+              "currentEquation": "10"
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.4562146892655367,
+          "y": 0.825301204819277,
+          "uniqueID": "id-1070",
+          "name": "-Total_Depth/2 + y",
+          "ioValues": [
+            {
+              "name": "y",
+              "ioValue": 4,
+              "currentEquation": "4"
+            }
+          ],
+          "currentEquation": "-Total_Depth/2 + y"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-1076",
+          "name": "Total_Depth",
+          "type": "number"
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5840395480225989,
+          "y": 0.6626506024096386,
+          "uniqueID": "id-1080",
           "ioValues": [
             {
               "name": "geometry",
@@ -4098,31 +4157,14 @@
             },
             {
               "name": "yDist",
-              "ioValue": 0
+              "ioValue": -12.5
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 15,
+              "currentEquation": "15"
             }
           ]
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.5127118644067796,
-          "y": 0.8373493975903615,
-          "uniqueID": "id-1070",
-          "name": "Total_Depth - x",
-          "ioValues": [
-            {
-              "name": "Total_Depth",
-              "ioValue": 0
-            },
-            {
-              "name": "x",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "Total_Depth - x"
         }
       ],
       "allConnectors": [
@@ -4142,8 +4184,33 @@
           "ap2ID": "id-1063"
         },
         {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1055",
+          "ap2ID": "id-1080"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1059",
+          "ap2ID": "id-749"
+        },
+        {
           "ap2Name": "Shape 2",
           "ap1ID": "id-1063",
+          "ap2ID": "id-1059"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-1070",
+          "ap2ID": "id-1063"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-1070",
+          "ap2ID": "id-1080"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-1080",
           "ap2ID": "id-1059"
         }
       ],
@@ -4155,6 +4222,11 @@
       "ap2Name": "Total_Depth",
       "ap1ID": "id-4",
       "ap2ID": "id-16"
+    },
+    {
+      "ap2Name": "Total_Depth",
+      "ap1ID": "id-4",
+      "ap2ID": "id-747"
     },
     {
       "ap2Name": "Total_Width",
