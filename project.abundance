@@ -595,8 +595,7 @@
         },
         {
           "name": "width_clear",
-          "ioValue": 5,
-          "currentEquation": "5"
+          "ioValue": 5
         }
       ],
       "topLevel": false,
@@ -1777,8 +1776,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.3651129943502825,
-          "y": 0.680722891566265,
+          "x": 0.3700564971751413,
+          "y": 0.6536144578313253,
           "uniqueID": "id-562",
           "name": "Linear_Pattern__Distance_",
           "ioValues": [
@@ -1789,8 +1788,8 @@
             },
             {
               "name": "Spacing",
-              "ioValue": 15,
-              "currentEquation": "15"
+              "ioValue": 12,
+              "currentEquation": "12"
             }
           ],
           "topLevel": false,
@@ -1823,7 +1822,7 @@
                 },
                 {
                   "name": "spacing",
-                  "ioValue": 15
+                  "ioValue": 12
                 }
               ],
               "codeVersion": 1,
@@ -1952,8 +1951,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7874293785310734,
-          "y": 0.35542168674698793,
+          "x": 0.7817796610169491,
+          "y": 0.40361445783132527,
           "uniqueID": "id-585",
           "ioValues": [
             {
@@ -1996,8 +1995,8 @@
             },
             {
               "name": "Spacing",
-              "ioValue": 10,
-              "currentEquation": "10"
+              "ioValue": 9,
+              "currentEquation": "9"
             }
           ],
           "topLevel": false,
@@ -2030,7 +2029,7 @@
                 },
                 {
                   "name": "spacing",
-                  "ioValue": 10
+                  "ioValue": 9
                 }
               ],
               "codeVersion": 1,
@@ -2184,8 +2183,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.5247175141242938,
-          "y": 0.6596385542168675,
+          "x": 0.5218926553672316,
+          "y": 0.6626506024096386,
           "uniqueID": "id-634",
           "ioValues": [
             {
@@ -2208,8 +2207,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.692090395480226,
-          "y": 0.753012048192771,
+          "x": 0.6885593220338984,
+          "y": 0.7409638554216867,
           "uniqueID": "id-640",
           "ioValues": [
             {
@@ -2218,8 +2217,8 @@
             },
             {
               "name": "xDist",
-              "ioValue": -36.5,
-              "currentEquation": "-Total_Width/2"
+              "ioValue": -34.833333333333336,
+              "currentEquation": "-Total_Width/2 + width_clear/3"
             },
             {
               "name": "yDist",
@@ -2234,8 +2233,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6709039548022598,
-          "y": 0.6656626506024096,
+          "x": 0.653954802259887,
+          "y": 0.6837349397590361,
           "uniqueID": "id-646",
           "ioValues": [
             {
@@ -2244,8 +2243,8 @@
             },
             {
               "name": "xDist",
-              "ioValue": 36.5,
-              "currentEquation": "Total_Width/2"
+              "ioValue": 34.833333333333336,
+              "currentEquation": "Total_Width/2 - width_clear/3"
             },
             {
               "name": "yDist",
@@ -2413,8 +2412,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.5911016949152542,
-          "y": 0.680722891566265,
+          "x": 0.5988700564971752,
+          "y": 0.6837349397590361,
           "uniqueID": "id-681",
           "name": "Center_XY",
           "ioValues": [
