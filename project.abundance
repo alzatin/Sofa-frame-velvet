@@ -590,8 +590,8 @@
       "ioValues": [
         {
           "name": "part_width",
-          "ioValue": 4,
-          "currentEquation": "4"
+          "ioValue": 3,
+          "currentEquation": "3"
         },
         {
           "name": "width_clear",
@@ -653,7 +653,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 50,
+                  "ioValue": 48,
                   "currentEquation": "Total_Height*2 + part_width*2"
                 }
               ]
@@ -704,7 +704,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -25,
+                  "ioValue": -24,
                   "currentEquation": "-Total_Height - part_width"
                 },
                 {
@@ -745,7 +745,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -2,
+                  "ioValue": -1.5,
                   "currentEquation": "-part_width/2"
                 },
                 {
@@ -768,7 +768,7 @@
                 {
                   "name": "Shape 1",
                   "ioValue": {
-                    "geometry": "move-cut-cut-rectangle-4-8.4-move-rectangle-1.5-1.5--2--4.2-0-move-rectangle-1.5-1.5-2--4.2-0--2--4.2-0",
+                    "geometry": "move-cut-cut-rectangle-3-8.4-move-rectangle-1.5-1.5--1.5--4.2-0-move-rectangle-1.5-1.5-1.5--4.2-0--1.5--4.2-0",
                     "dimension": "2D",
                     "plane": {
                       "origin": [
@@ -795,7 +795,7 @@
                 {
                   "name": "Shape 3",
                   "ioValue": {
-                    "geometry": "intersect-move-cut-circle-25-circle-21--25-0-0-move-rectangle-14-14-0-7-0",
+                    "geometry": "intersect-move-cut-circle-24-circle-21--24-0-0-move-rectangle-14-14-0-7-0",
                     "tags": [],
                     "color": "#aad7f2",
                     "plane": {
@@ -916,7 +916,7 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 4,
+                      "ioValue": 3,
                       "currentEquation": "part_width"
                     },
                     {
@@ -956,7 +956,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 2,
+                      "ioValue": 1.5,
                       "currentEquation": "part_width/2"
                     },
                     {
@@ -983,7 +983,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": -2,
+                      "ioValue": -1.5,
                       "currentEquation": "-part_width/2"
                     },
                     {
@@ -1951,8 +1951,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7817796610169491,
-          "y": 0.40361445783132527,
+          "x": 0.778954802259887,
+          "y": 0.4246987951807229,
           "uniqueID": "id-585",
           "ioValues": [
             {
@@ -2207,8 +2207,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6885593220338984,
-          "y": 0.7409638554216867,
+          "x": 0.6857344632768362,
+          "y": 0.8584337349397589,
           "uniqueID": "id-640",
           "ioValues": [
             {
