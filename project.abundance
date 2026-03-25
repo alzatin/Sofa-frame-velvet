@@ -4033,8 +4033,8 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.2584745762711865,
-          "y": 0.6536144578313253,
+          "x": 0.2330508474576271,
+          "y": 0.7108433734939759,
           "uniqueID": "id-1051",
           "ioValues": [
             {
@@ -4051,8 +4051,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.3651129943502825,
-          "y": 0.6445783132530121,
+          "x": 0.4216101694915254,
+          "y": 0.6204819277108434,
           "uniqueID": "id-1055",
           "ioValues": [
             {
@@ -4065,13 +4065,86 @@
               "currentEquation": "Ply_thick"
             }
           ]
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.6546610169491525,
+          "y": 0.35542168674698793,
+          "uniqueID": "id-1059",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5805084745762712,
+          "y": 0.6204819277108434,
+          "uniqueID": "id-1063",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.5127118644067796,
+          "y": 0.8373493975903615,
+          "uniqueID": "id-1070",
+          "name": "Total_Depth - x",
+          "ioValues": [
+            {
+              "name": "Total_Depth",
+              "ioValue": 0
+            },
+            {
+              "name": "x",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "Total_Depth - x"
         }
       ],
       "allConnectors": [
         {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-751",
+          "ap2ID": "id-1059"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-1051",
           "ap2ID": "id-1055"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1055",
+          "ap2ID": "id-1063"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-1063",
+          "ap2ID": "id-1059"
         }
       ],
       "fileTypeVersion": 1
