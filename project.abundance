@@ -610,8 +610,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.20127118644067796,
-          "y": 0.5602409638554217,
+          "x": 0.16807909604519775,
+          "y": 0.6325301204819277,
           "uniqueID": "id-130",
           "name": "Side_wall_part",
           "topLevel": false,
@@ -1128,8 +1128,8 @@
             },
             {
               "atomType": "Rotate",
-              "x": 0.8121468926553672,
-              "y": 0.6355421686746988,
+              "x": 0.815677966101695,
+              "y": 0.6596385542168675,
               "uniqueID": "id-405",
               "ioValues": [
                 {
@@ -1148,7 +1148,8 @@
                 },
                 {
                   "name": "z-axis degrees",
-                  "ioValue": 0
+                  "ioValue": 90,
+                  "currentEquation": "90"
                 }
               ]
             },
@@ -1271,8 +1272,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.3064971751412429,
-          "y": 0.3192771084337349,
+          "x": 0.3100282485875706,
+          "y": 0.32228915662650603,
           "uniqueID": "id-423",
           "name": "Base",
           "ioValues": [
@@ -1768,6 +1769,476 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.4279661016949153,
+          "y": 0.5060240963855421,
+          "uniqueID": "id-562",
+          "name": "Linear_Pattern__Distance_",
+          "ioValues": [
+            {
+              "name": "Distance",
+              "ioValue": 73,
+              "currentEquation": "Total_Width"
+            },
+            {
+              "name": "Spacing",
+              "ioValue": 15,
+              "currentEquation": "15"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-554",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.4535752401280683,
+              "y": 0.45481927710843373,
+              "uniqueID": "id-555",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "distance",
+                  "ioValue": 73
+                },
+                {
+                  "name": "spacing",
+                  "ioValue": 15
+                }
+              ],
+              "codeVersion": 1,
+              "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"distance\", type: \"number\", defaultValue: 5 },\n  { inputName: \"spacing\", type: \"number\", defaultValue: 10 }\n];\n\nlet boundsX = library[shape].geometry[0].boundingBox.width\nconsole.log(library[shape].geometry[0].boundingBox)\nconsole.log(boundsX)\n\nlet shapesArray = [];\nlet number = Math.floor(distance/ (boundsX+ spacing ))\nconsole.log(Math.floor(number))\n\nfor (let i = 0; i < number; i++) {\n    let movedShape = await Move(shape, (boundsX + spacing) * i, 0,0);\n    shapesArray.push(movedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n"
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.2009009009009009,
+              "y": 0.41566265060240964,
+              "uniqueID": "id-556",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.33617929562433296,
+              "y": 0.3253012048192771,
+              "uniqueID": "id-557",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.2006403415154749,
+              "y": 0.7560240963855422,
+              "uniqueID": "id-558",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 1
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-559",
+              "name": "Shape"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-560",
+              "name": "Distance"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.3384615384615385,
+              "uniqueID": "id-561",
+              "name": "Spacing"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-555",
+              "ap2ID": "id-554"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-558",
+              "ap2ID": "id-557"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-559",
+              "ap2ID": "id-555"
+            },
+            {
+              "ap2Name": "distance",
+              "ap1ID": "id-560",
+              "ap2ID": "id-555"
+            },
+            {
+              "ap2Name": "spacing",
+              "ap1ID": "id-561",
+              "ap2ID": "id-555"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-03-25T18:23:39.344Z",
+            "privateRepo": false,
+            "repoName": "Linear_Pattern__Distance_",
+            "dateCreated": "2026-02-23T15:03:24Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/alzatin/Linear_Pattern__Distance_/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-34",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/alzatin/Linear_Pattern__Distance_",
+            "topics": [
+              "abundance-tool"
+            ],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739670",
+            "ranking": 0.9,
+            "searchField": "linear_pattern__distance_ alzatin intakes a geometry and creates an assembly of shapes over a particular distance and spacing. abundance-tool",
+            "owner": "alzatin",
+            "description": "Intakes a geometry and creates an assembly of shapes over a particular distance and spacing.",
+            "contentURL": "https://raw.githubusercontent.com/alzatin/Linear_Pattern__Distance_/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/alzatin/Linear_Pattern__Distance_/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.7429378531073446,
+          "y": 0.3192771084337349,
+          "uniqueID": "id-585",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 4",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 5",
+              "ioValue": null
+            }
+          ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.3693502824858757,
+          "y": 0.7981927710843374,
+          "uniqueID": "id-597",
+          "name": "Linear_Pattern__Distance_",
+          "ioValues": [
+            {
+              "name": "Distance",
+              "ioValue": 33,
+              "currentEquation": "Total_Depth"
+            },
+            {
+              "name": "Spacing",
+              "ioValue": 15
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-598",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.4535752401280683,
+              "y": 0.45481927710843373,
+              "uniqueID": "id-599",
+              "ioValues": [
+                {
+                  "name": "shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "distance",
+                  "ioValue": 33
+                },
+                {
+                  "name": "spacing",
+                  "ioValue": 15
+                }
+              ],
+              "codeVersion": 1,
+              "code": "\n// Example Code\nconst Inputs = [\n  { inputName: \"shape\", type: \"geometry\", defaultValue: null },\n  { inputName: \"distance\", type: \"number\", defaultValue: 5 },\n  { inputName: \"spacing\", type: \"number\", defaultValue: 10 }\n];\n\nlet boundsX = library[shape].geometry[0].boundingBox.width\nconsole.log(library[shape].geometry[0].boundingBox)\nconsole.log(boundsX)\n\nlet shapesArray = [];\nlet number = Math.floor(distance/ (boundsX+ spacing ))\nconsole.log(Math.floor(number))\n\nfor (let i = 0; i < number; i++) {\n    let movedShape = await Move(shape, (boundsX + spacing) * i, 0,0);\n    shapesArray.push(movedShape);\n}\n\nlet assembledShape = await Assembly(shapesArray)\n\nreturn assembledShape;\n\n\n\n\n\n\n"
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.2009009009009009,
+              "y": 0.41566265060240964,
+              "uniqueID": "id-600",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.33617929562433296,
+              "y": 0.3253012048192771,
+              "uniqueID": "id-601",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.2006403415154749,
+              "y": 0.7560240963855422,
+              "uniqueID": "id-602",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 1
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-603",
+              "name": "Shape"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-604",
+              "name": "Distance"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.3384615384615385,
+              "uniqueID": "id-605",
+              "name": "Spacing"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-599",
+              "ap2ID": "id-598"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-602",
+              "ap2ID": "id-601"
+            },
+            {
+              "ap2Name": "shape",
+              "ap1ID": "id-603",
+              "ap2ID": "id-599"
+            },
+            {
+              "ap2Name": "distance",
+              "ap1ID": "id-604",
+              "ap2ID": "id-599"
+            },
+            {
+              "ap2Name": "spacing",
+              "ap1ID": "id-605",
+              "ap2ID": "id-599"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-03-25T18:23:39.344Z",
+            "privateRepo": false,
+            "repoName": "Linear_Pattern__Distance_",
+            "dateCreated": "2026-02-23T15:03:24Z",
+            "likes": 0,
+            "readMe": "https://raw.githubusercontent.com/alzatin/Linear_Pattern__Distance_/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-34",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/alzatin/Linear_Pattern__Distance_",
+            "topics": [
+              "abundance-tool"
+            ],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739670",
+            "ranking": 0.9,
+            "searchField": "linear_pattern__distance_ alzatin intakes a geometry and creates an assembly of shapes over a particular distance and spacing. abundance-tool",
+            "owner": "alzatin",
+            "description": "Intakes a geometry and creates an assembly of shapes over a particular distance and spacing.",
+            "contentURL": "https://raw.githubusercontent.com/alzatin/Linear_Pattern__Distance_/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/alzatin/Linear_Pattern__Distance_/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "Unitless",
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.5134180790960452,
+          "y": 0.8343373493975904,
+          "uniqueID": "id-628",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": -90,
+              "currentEquation": "-90"
+            }
+          ]
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.5662429378531074,
+          "y": 0.6849397590361446,
+          "uniqueID": "id-634",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 90
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.6440677966101696,
+          "y": 0.8042168674698795,
+          "uniqueID": "id-640",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.6532485875706215,
+          "y": 0.5481927710843374,
+          "uniqueID": "id-646",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -1775,6 +2246,56 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-130",
           "ap2ID": "id-128"
+        },
+        {
+          "ap2Name": "Shape",
+          "ap1ID": "id-130",
+          "ap2ID": "id-562"
+        },
+        {
+          "ap2Name": "Shape",
+          "ap1ID": "id-130",
+          "ap2ID": "id-597"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-423",
+          "ap2ID": "id-585"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-562",
+          "ap2ID": "id-585"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-597",
+          "ap2ID": "id-628"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-597",
+          "ap2ID": "id-634"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-628",
+          "ap2ID": "id-640"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-634",
+          "ap2ID": "id-646"
+        },
+        {
+          "ap2Name": "Shape 5",
+          "ap1ID": "id-640",
+          "ap2ID": "id-585"
+        },
+        {
+          "ap2Name": "Shape 4",
+          "ap1ID": "id-646",
+          "ap2ID": "id-585"
         }
       ],
       "fileTypeVersion": 1
