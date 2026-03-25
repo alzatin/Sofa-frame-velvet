@@ -629,24 +629,6 @@
               ]
             },
             {
-              "atomType": "Rectangle",
-              "x": 0.18361581920903955,
-              "y": 0.31626506024096385,
-              "uniqueID": "id-134",
-              "ioValues": [
-                {
-                  "name": "x length",
-                  "ioValue": 4,
-                  "currentEquation": "part_width"
-                },
-                {
-                  "name": "y length",
-                  "ioValue": 10.8,
-                  "currentEquation": "Total_Height/2.5"
-                }
-              ]
-            },
-            {
               "atomType": "Circle",
               "x": 0.2019774011299435,
               "y": 0.5813253012048193,
@@ -749,8 +731,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.3502824858757062,
-              "y": 0.47289156626506024,
+              "x": 0.3516949152542373,
+              "y": 0.463855421686747,
               "uniqueID": "id-195",
               "ioValues": [
                 {
@@ -781,30 +763,7 @@
               "ioValues": [
                 {
                   "name": "Shape 1",
-                  "ioValue": {
-                    "geometry": "move-rectangle-4-10.8--2--5.4-0",
-                    "dimension": "2D",
-                    "plane": {
-                      "origin": [
-                        0,
-                        0,
-                        0
-                      ],
-                      "xDir": [
-                        1,
-                        0,
-                        0
-                      ],
-                      "normal": [
-                        0,
-                        0,
-                        1
-                      ]
-                    },
-                    "color": "#aad7f2",
-                    "tags": [],
-                    "bom": []
-                  }
+                  "ioValue": null
                 },
                 {
                   "name": "Shape 3",
@@ -874,14 +833,75 @@
                 }
               ],
               "currentEquation": "-Total_Height/2.5/2"
+            },
+            {
+              "atomType": "Molecule",
+              "x": 0.18997175141242936,
+              "y": 0.29819277108433734,
+              "uniqueID": "id-357",
+              "name": "Bottom_tenon",
+              "topLevel": false,
+              "allAtoms": [
+                {
+                  "atomType": "Output",
+                  "x": 0.98,
+                  "y": 0.5,
+                  "uniqueID": "id-359",
+                  "ioValues": [
+                    {
+                      "name": "number or geometry",
+                      "ioValue": "__GEOMETRY_INPUT__"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.3100282485875706,
+                  "y": 0.3403614457831325,
+                  "uniqueID": "id-361",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 4,
+                      "currentEquation": "part_width"
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 10.8,
+                      "currentEquation": "Total_Height/2.5"
+                    }
+                  ]
+                },
+                {
+                  "atomType": "Rectangle",
+                  "x": 0.1560734463276836,
+                  "y": 0.75,
+                  "uniqueID": "id-365",
+                  "ioValues": [
+                    {
+                      "name": "x length",
+                      "ioValue": 4,
+                      "currentEquation": "part_width"
+                    },
+                    {
+                      "name": "y length",
+                      "ioValue": 10.8,
+                      "currentEquation": "Total_Height/2.5"
+                    }
+                  ]
+                }
+              ],
+              "allConnectors": [
+                {
+                  "ap2Name": "number or geometry",
+                  "ap1ID": "id-361",
+                  "ap2ID": "id-359"
+                }
+              ],
+              "fileTypeVersion": 1
             }
           ],
           "allConnectors": [
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-134",
-              "ap2ID": "id-195"
-            },
             {
               "ap2Name": "geometry2",
               "ap1ID": "id-138",
@@ -930,6 +950,11 @@
             {
               "ap2Name": "yDist",
               "ap1ID": "id-309",
+              "ap2ID": "id-195"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-357",
               "ap2ID": "id-195"
             }
           ],
