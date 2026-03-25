@@ -2184,8 +2184,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.5296610169491526,
-          "y": 0.6656626506024096,
+          "x": 0.5247175141242938,
+          "y": 0.6596385542168675,
           "uniqueID": "id-634",
           "ioValues": [
             {
@@ -2234,8 +2234,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6687853107344632,
-          "y": 0.641566265060241,
+          "x": 0.6709039548022598,
+          "y": 0.6656626506024096,
           "uniqueID": "id-646",
           "ioValues": [
             {
@@ -2413,8 +2413,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.5896892655367232,
-          "y": 0.6897590361445783,
+          "x": 0.5911016949152542,
+          "y": 0.680722891566265,
           "uniqueID": "id-681",
           "name": "Center_XY",
           "ioValues": [
@@ -2658,8 +2658,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": -16.5,
-              "currentEquation": "-Total_Depth/2"
+              "ioValue": -11.5,
+              "currentEquation": "-Total_Depth/2 + width_clear"
             },
             {
               "name": "zDist",
@@ -2670,7 +2670,7 @@
         {
           "atomType": "Move",
           "x": 0.40819209039548027,
-          "y": 0.3132530120481927,
+          "y": 0.3102409638554217,
           "uniqueID": "id-732",
           "ioValues": [
             {
@@ -2684,8 +2684,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 0,
-              "currentEquation": "0"
+              "ioValue": -11.5,
+              "currentEquation": "-Total_Depth/2 + width_clear"
             },
             {
               "name": "zDist",
