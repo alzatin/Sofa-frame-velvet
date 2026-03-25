@@ -1154,8 +1154,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.8778248587570622,
-              "y": 0.5662650602409639,
+              "x": 0.8848870056497175,
+              "y": 0.4969879518072289,
               "uniqueID": "id-411",
               "ioValues": [
                 {
@@ -1172,7 +1172,8 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 0
+                  "ioValue": 9.25,
+                  "currentEquation": "(Total_Height/2.5) - Ply_thick"
                 }
               ]
             }
