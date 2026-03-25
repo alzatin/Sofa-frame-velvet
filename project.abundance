@@ -78,8 +78,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.5049435028248588,
-      "y": 0.4457831325301205,
+      "x": 0.507768361581921,
+      "y": 0.4487951807228916,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -1547,7 +1547,7 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.1652542372881356,
+          "x": 0.1504237288135593,
           "y": 0.7590361445783133,
           "uniqueID": "id-130",
           "name": "Side_wall_part",
@@ -1652,8 +1652,8 @@
             },
             {
               "atomType": "Intersection",
-              "x": 0.5727401129943502,
-              "y": 0.5301204819277108,
+              "x": 0.5649717514124294,
+              "y": 0.536144578313253,
               "uniqueID": "id-186",
               "ioValues": [
                 {
@@ -1693,8 +1693,8 @@
             },
             {
               "atomType": "Fusion",
-              "x": 0.6701977401129944,
-              "y": 0.2620481927710844,
+              "x": 0.6673728813559322,
+              "y": 0.21987951807228914,
               "uniqueID": "id-201",
               "ioValues": [
                 {
@@ -1754,7 +1754,7 @@
                 {
                   "name": "Shape 4",
                   "ioValue": {
-                    "geometry": "move-rectangle-0.75-1.5--7.241379310344827-13.125-0",
+                    "geometry": "move-rectangle-1.5-0.75--6.5625-15.000000000000002-0",
                     "dimension": "2D",
                     "plane": {
                       "origin": [
@@ -1828,20 +1828,20 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 0.75,
-                  "currentEquation": "Ply_thick"
+                  "ioValue": 1.5,
+                  "currentEquation": "Ply_thick*2"
                 },
                 {
                   "name": "y length",
-                  "ioValue": 1.5,
-                  "currentEquation": "Ply_thick *2"
+                  "ioValue": 0.75,
+                  "currentEquation": "Ply_thick"
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.7161016949152542,
-              "y": 0.6867469879518072,
+              "x": 0.7217514124293786,
+              "y": 0.6746987951807228,
               "uniqueID": "id-394",
               "ioValues": [
                 {
@@ -1850,13 +1850,13 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -7.241379310344827,
-                  "currentEquation": "-Total_Height/2.9"
+                  "ioValue": -6.5625,
+                  "currentEquation": "-Total_Height/3.2"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 13.125,
-                  "currentEquation": "Total_Height/1.6"
+                  "ioValue": 15.000000000000002,
+                  "currentEquation": "Total_Height/1.4"
                 },
                 {
                   "name": "zDist",
@@ -1932,8 +1932,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.1906779661016949,
-              "y": 0.30120481927710846,
+              "x": 0.1942090395480226,
+              "y": 0.28313253012048195,
               "uniqueID": "id-357",
               "name": "Bottom_tenon",
               "topLevel": false,
@@ -6566,7 +6566,7 @@
     },
     {
       "atomType": "CutLayout",
-      "x": 0.699858757062147,
+      "x": 0.70409604519774,
       "y": 0.1686746987951807,
       "uniqueID": "id-3025",
       "name": "Cut Layout",
