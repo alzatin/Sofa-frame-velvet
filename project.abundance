@@ -580,6 +580,71 @@
       "y": 0.5983317886932344,
       "uniqueID": "id-54",
       "name": "Ply_thick"
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2344632768361582,
+      "y": 0.6265060240963854,
+      "uniqueID": "id-126",
+      "name": "Side_wall",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-128",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.20833333333333334,
+          "y": 0.45180722891566266,
+          "uniqueID": "id-130",
+          "name": "Side_wall_part",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-132",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.2344632768361582,
+              "y": 0.536144578313253,
+              "uniqueID": "id-134",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 10.5,
+                  "currentEquation": "Total_Height/2"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 10
+                }
+              ]
+            }
+          ],
+          "allConnectors": [],
+          "fileTypeVersion": 1
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
