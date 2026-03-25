@@ -74,8 +74,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2507062146892655,
-      "y": 0.27710843373493976,
+      "x": 0.24929378531073448,
+      "y": 0.29518072289156627,
       "uniqueID": "id-16",
       "name": "Base",
       "ioValues": [
@@ -583,10 +583,17 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.22810734463276836,
-      "y": 0.6656626506024096,
+      "x": 0.2288135593220339,
+      "y": 0.6506024096385542,
       "uniqueID": "id-126",
       "name": "Side_wall",
+      "ioValues": [
+        {
+          "name": "part_width",
+          "ioValue": 4,
+          "currentEquation": "4"
+        }
+      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -603,8 +610,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.2076271186440678,
-          "y": 0.4307228915662651,
+          "x": 0.2570621468926554,
+          "y": 0.4246987951807229,
           "uniqueID": "id-130",
           "name": "Side_wall_part",
           "topLevel": false,
@@ -623,14 +630,14 @@
             },
             {
               "atomType": "Rectangle",
-              "x": 0.1843220338983051,
-              "y": 0.3403614457831325,
+              "x": 0.18361581920903955,
+              "y": 0.31626506024096385,
               "uniqueID": "id-134",
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 3,
-                  "currentEquation": "3"
+                  "ioValue": 4,
+                  "currentEquation": "part_width"
                 },
                 {
                   "name": "y length",
@@ -654,21 +661,21 @@
             },
             {
               "atomType": "Circle",
-              "x": 0.2288135593220339,
+              "x": 0.2252824858757062,
               "y": 0.7650602409638555,
               "uniqueID": "id-165",
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 60,
-                  "currentEquation": "Total_Height*2 + 6"
+                  "ioValue": 62,
+                  "currentEquation": "Total_Height*2 + part_width*2"
                 }
               ]
             },
             {
               "atomType": "Difference",
-              "x": 0.3672316384180791,
-              "y": 0.6987951807228915,
+              "x": 0.3693502824858757,
+              "y": 0.75,
               "uniqueID": "id-168",
               "ioValues": [
                 {
@@ -701,8 +708,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5042372881355932,
-              "y": 0.8102409638554217,
+              "x": 0.4950564971751412,
+              "y": 0.8132530120481928,
               "uniqueID": "id-176",
               "ioValues": [
                 {
@@ -711,8 +718,8 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -30,
-                  "currentEquation": "-Total_Height - 3"
+                  "ioValue": -31,
+                  "currentEquation": "-Total_Height - part_width"
                 },
                 {
                   "name": "yDist",
@@ -726,8 +733,8 @@
             },
             {
               "atomType": "Intersection",
-              "x": 0.5550847457627119,
-              "y": 0.4126506024096385,
+              "x": 0.5685028248587571,
+              "y": 0.5391566265060241,
               "uniqueID": "id-186",
               "ioValues": [
                 {
@@ -742,8 +749,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.3488700564971751,
-              "y": 0.45180722891566266,
+              "x": 0.3502824858757062,
+              "y": 0.47289156626506024,
               "uniqueID": "id-195",
               "ioValues": [
                 {
@@ -752,13 +759,13 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -1.5,
-                  "currentEquation": "-1.5"
+                  "ioValue": -2,
+                  "currentEquation": "-part_width/2"
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -4.2,
-                  "currentEquation": "-4.20"
+                  "ioValue": -5.4,
+                  "currentEquation": "-5"
                 },
                 {
                   "name": "zDist",
@@ -775,7 +782,7 @@
                 {
                   "name": "Shape 1",
                   "ioValue": {
-                    "geometry": "move-rectangle-3-10.8--1.5--4.2-0",
+                    "geometry": "move-rectangle-4-10.8--2--5.4-0",
                     "dimension": "2D",
                     "plane": {
                       "origin": [
@@ -802,7 +809,7 @@
                 {
                   "name": "Shape 3",
                   "ioValue": {
-                    "geometry": "intersect-move-cut-circle-30-circle-27--30-0-0-move-rectangle-18-18-0-9-0",
+                    "geometry": "intersect-move-cut-circle-31-circle-27--31-0-0-move-rectangle-18-18-0-9-0",
                     "tags": [],
                     "color": "#aad7f2",
                     "plane": {
@@ -831,8 +838,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.4392655367231639,
-              "y": 0.28012048192771083,
+              "x": 0.442090395480226,
+              "y": 0.286144578313253,
               "uniqueID": "id-206",
               "ioValues": [
                 {
@@ -853,6 +860,20 @@
                   "ioValue": 0
                 }
               ]
+            },
+            {
+              "atomType": "Equation",
+              "x": 0.1038135593220339,
+              "y": 0.783132530120482,
+              "uniqueID": "id-309",
+              "name": "-Total_Height/2.5/2",
+              "ioValues": [
+                {
+                  "name": "Total_Height",
+                  "ioValue": 1
+                }
+              ],
+              "currentEquation": "-Total_Height/2.5/2"
             }
           ],
           "allConnectors": [
@@ -905,9 +926,21 @@
               "ap2Name": "geometry2",
               "ap1ID": "id-206",
               "ap2ID": "id-186"
+            },
+            {
+              "ap2Name": "yDist",
+              "ap1ID": "id-309",
+              "ap2ID": "id-195"
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.286144578313253,
+          "uniqueID": "id-306",
+          "name": "part_width"
         }
       ],
       "allConnectors": [],
