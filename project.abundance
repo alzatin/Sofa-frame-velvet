@@ -583,8 +583,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2288135593220339,
-      "y": 0.6506024096385542,
+      "x": 0.2478813559322034,
+      "y": 0.6295180722891566,
       "uniqueID": "id-126",
       "name": "Side_wall",
       "ioValues": [
@@ -656,8 +656,8 @@
             },
             {
               "atomType": "Difference",
-              "x": 0.3693502824858757,
-              "y": 0.75,
+              "x": 0.3679378531073446,
+              "y": 0.753012048192771,
               "uniqueID": "id-168",
               "ioValues": [
                 {
@@ -690,8 +690,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.4950564971751412,
-              "y": 0.8132530120481928,
+              "x": 0.4964689265536723,
+              "y": 0.8102409638554217,
               "uniqueID": "id-176",
               "ioValues": [
                 {
@@ -715,8 +715,8 @@
             },
             {
               "atomType": "Intersection",
-              "x": 0.5685028248587571,
-              "y": 0.5391566265060241,
+              "x": 0.5727401129943502,
+              "y": 0.5301204819277108,
               "uniqueID": "id-186",
               "ioValues": [
                 {
@@ -820,7 +820,7 @@
             },
             {
               "atomType": "Move",
-              "x": 0.44279661016949157,
+              "x": 0.44844632768361586,
               "y": 0.29518072289156627,
               "uniqueID": "id-206",
               "ioValues": [
@@ -859,8 +859,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.18785310734463276,
-              "y": 0.3072289156626506,
+              "x": 0.1906779661016949,
+              "y": 0.30120481927710846,
               "uniqueID": "id-357",
               "name": "Bottom_tenon",
               "topLevel": false,
@@ -1037,6 +1037,49 @@
                 }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.5967514124293785,
+              "y": 0.7981927710843374,
+              "uniqueID": "id-390",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 0.75,
+                  "currentEquation": ".75"
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 0.75,
+                  "currentEquation": ".75"
+                }
+              ]
+            },
+            {
+              "atomType": "Move",
+              "x": 0.7033898305084746,
+              "y": 0.7018072289156627,
+              "uniqueID": "id-394",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 14.666666666666666,
+                  "currentEquation": "Total_Height/1.5"
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": 0
+                }
+              ]
             }
           ],
           "allConnectors": [
@@ -1094,6 +1137,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-357",
               "ap2ID": "id-195"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-390",
+              "ap2ID": "id-394"
             }
           ],
           "fileTypeVersion": 1
@@ -1106,7 +1154,13 @@
           "name": "part_width"
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-130",
+          "ap2ID": "id-128"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
