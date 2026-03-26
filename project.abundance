@@ -7,8 +7,8 @@
   "ioValues": [
     {
       "name": "Total_Depth",
-      "ioValue": 33,
-      "currentEquation": "33"
+      "ioValue": 27,
+      "currentEquation": "27"
     },
     {
       "name": "Total_Width",
@@ -81,8 +81,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.530367231638418,
-      "y": 0.5542168674698795,
+      "x": 0.5324858757062146,
+      "y": 0.5662650602409639,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -116,7 +116,7 @@
         },
         {
           "name": "Total_Depth",
-          "ioValue": 33
+          "ioValue": 27
         },
         {
           "name": "Wing_Width",
@@ -256,7 +256,7 @@
             },
             {
               "name": "length",
-              "ioValue": 33
+              "ioValue": 27
             },
             {
               "name": "radius",
@@ -302,7 +302,7 @@
                 },
                 {
                   "name": "length",
-                  "ioValue": 33
+                  "ioValue": 27
                 }
               ],
               "codeVersion": 1,
@@ -411,7 +411,7 @@
             },
             {
               "name": "length",
-              "ioValue": 19.411764705882355,
+              "ioValue": 15.882352941176471,
               "currentEquation": "Total_Depth/1.7"
             },
             {
@@ -458,7 +458,7 @@
                 },
                 {
                   "name": "length",
-                  "ioValue": 19.411764705882355
+                  "ioValue": 15.882352941176471
                 }
               ],
               "codeVersion": 1,
@@ -605,8 +605,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2542372881355932,
-      "y": 0.31626506024096385,
+      "x": 0.2528248587570621,
+      "y": 0.41566265060240964,
       "uniqueID": "id-126",
       "name": "Side_wall",
       "ioValues": [
@@ -642,8 +642,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.7874293785310734,
-          "y": 0.33433734939759036,
+          "x": 0.7846045197740112,
+          "y": 0.3313253012048193,
           "uniqueID": "id-585",
           "ioValues": [
             {
@@ -670,8 +670,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.510593220338983,
-          "y": 0.8734939759036144,
+          "x": 0.5134180790960452,
+          "y": 0.8614457831325302,
           "uniqueID": "id-628",
           "ioValues": [
             {
@@ -694,8 +694,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.5247175141242938,
-          "y": 0.6686746987951807,
+          "x": 0.5268361581920904,
+          "y": 0.6746987951807228,
           "uniqueID": "id-634",
           "ioValues": [
             {
@@ -745,7 +745,7 @@
         {
           "atomType": "Move",
           "x": 0.6800847457627119,
-          "y": 0.608433734939759,
+          "y": 0.5963855421686747,
           "uniqueID": "id-646",
           "ioValues": [
             {
@@ -770,8 +770,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6214689265536723,
-          "y": 0.39759036144578314,
+          "x": 0.626412429378531,
+          "y": 0.4246987951807229,
           "uniqueID": "id-707",
           "ioValues": [
             {
@@ -785,7 +785,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -12,
+              "ioValue": -9.818181818181818,
               "currentEquation": "-Total_Depth/2.75"
             },
             {
@@ -859,7 +859,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -12.5,
+              "ioValue": -9.5,
               "currentEquation": "-Total_Depth/2 + width_clear"
             },
             {
@@ -870,8 +870,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.41949152542372886,
-          "y": 0.3042168674698795,
+          "x": 0.4378531073446328,
+          "y": 0.23795180722891565,
           "uniqueID": "id-732",
           "ioValues": [
             {
@@ -885,7 +885,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -12.6875,
+              "ioValue": -9.6875,
               "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/4"
             },
             {
@@ -1084,7 +1084,7 @@
           "ioValues": [
             {
               "name": "Distance",
-              "ioValue": 23,
+              "ioValue": 17,
               "currentEquation": "Total_Depth - 10"
             },
             {
@@ -1118,7 +1118,7 @@
                 },
                 {
                   "name": "distance",
-                  "ioValue": 23
+                  "ioValue": 17
                 },
                 {
                   "name": "spacing",
@@ -2301,14 +2301,14 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.230225988700565,
-      "y": 0.8222891566265061,
+      "x": 0.23375706214689265,
+      "y": 0.8313253012048193,
       "uniqueID": "id-3032",
       "name": "Front_piece",
       "ioValues": [
         {
           "name": "part_width",
-          "ioValue": 4
+          "ioValue": 3
         },
         {
           "name": "width_clear",
@@ -2378,7 +2378,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": 31.3,
+              "ioValue": 32.6,
               "currentEquation": "Total_Width/2 - part_width *1.3"
             },
             {
@@ -2403,7 +2403,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -31.3,
+              "ioValue": -32.6,
               "currentEquation": "-(Total_Width/2) +part_width *1.3"
             },
             {
@@ -2465,7 +2465,7 @@
             },
             {
               "name": "y length",
-              "ioValue": 4,
+              "ioValue": 3,
               "currentEquation": "part_width"
             }
           ]
@@ -2522,7 +2522,7 @@
               "ioValue": {
                 "geometry": [
                   {
-                    "geometry": "rotate-move-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-26-circle-22--26-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-4-8.8-move-rectangle-1.5-1.5--2--4.4-0-move-rectangle-1.5-1.5-2--4.4-0--2--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0--31.3-0-0-0-90",
+                    "geometry": "rotate-move-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-25-circle-22--25-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-3-8.8-move-rectangle-1.5-1.5--1.5--4.4-0-move-rectangle-1.5-1.5-1.5--4.4-0--1.5--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0--32.6-0-0-0-90",
                     "tags": [],
                     "bom": [],
                     "plane": {
@@ -2546,7 +2546,7 @@
                     "dimension": "3D"
                   },
                   {
-                    "geometry": "rotate-move-rotate-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-26-circle-22--26-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-4-8.8-move-rectangle-1.5-1.5--2--4.4-0-move-rectangle-1.5-1.5-2--4.4-0--2--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0-0-180-0.75-31.3-0-0-0-90",
+                    "geometry": "rotate-move-rotate-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-25-circle-22--25-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-3-8.8-move-rectangle-1.5-1.5--1.5--4.4-0-move-rectangle-1.5-1.5-1.5--4.4-0--1.5--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0-0-180-0.75-32.6-0-0-0-90",
                     "tags": [],
                     "bom": [],
                     "plane": {
@@ -2596,7 +2596,7 @@
             {
               "name": "Shape 2",
               "ioValue": {
-                "geometry": "move-rotate-extrude-rectangle-68-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75--90-0-0-0-0-2",
+                "geometry": "move-rotate-extrude-rectangle-68-3-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75--90-0-0-0-0-1.5",
                 "dimension": "3D",
                 "plane": {
                   "origin": [
@@ -2643,15 +2643,15 @@
             },
             {
               "name": "zDist",
-              "ioValue": 2,
+              "ioValue": 1.5,
               "currentEquation": "part_width/2"
             }
           ]
         },
         {
           "atomType": "Move",
-          "x": 0.8439265536723164,
-          "y": 0.7228915662650602,
+          "x": 0.8467514124293785,
+          "y": 0.7108433734939759,
           "uniqueID": "id-3206",
           "ioValues": [
             {
@@ -2664,7 +2664,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": 14,
+              "ioValue": 11,
               "currentEquation": "Total_Depth/2 - width_clear/2"
             },
             {
@@ -2722,7 +2722,7 @@
               "ioValues": [
                 {
                   "name": "diameter",
-                  "ioValue": 52,
+                  "ioValue": 50,
                   "currentEquation": "Total_Height*2 + part_width*2"
                 }
               ]
@@ -2773,7 +2773,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -26,
+                  "ioValue": -25,
                   "currentEquation": "-Total_Height - part_width"
                 },
                 {
@@ -2814,7 +2814,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -2,
+                  "ioValue": -1.5,
                   "currentEquation": "-part_width/2"
                 },
                 {
@@ -2836,7 +2836,7 @@
                 {
                   "name": "Shape 1",
                   "ioValue": {
-                    "geometry": "move-cut-cut-rectangle-4-8.8-move-rectangle-1.5-1.5--2--4.4-0-move-rectangle-1.5-1.5-2--4.4-0--2--4.4-0",
+                    "geometry": "move-cut-cut-rectangle-3-8.8-move-rectangle-1.5-1.5--1.5--4.4-0-move-rectangle-1.5-1.5-1.5--4.4-0--1.5--4.4-0",
                     "dimension": "2D",
                     "plane": {
                       "origin": [
@@ -2863,7 +2863,7 @@
                 {
                   "name": "Shape 3",
                   "ioValue": {
-                    "geometry": "intersect-move-cut-circle-26-circle-22--26-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0",
+                    "geometry": "intersect-move-cut-circle-25-circle-22--25-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0",
                     "tags": [],
                     "color": "#aad7f2",
                     "plane": {
@@ -3088,7 +3088,7 @@
                   "ioValues": [
                     {
                       "name": "x length",
-                      "ioValue": 4,
+                      "ioValue": 3,
                       "currentEquation": "part_width"
                     },
                     {
@@ -3128,7 +3128,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": 2,
+                      "ioValue": 1.5,
                       "currentEquation": "part_width/2"
                     },
                     {
@@ -3154,7 +3154,7 @@
                     },
                     {
                       "name": "xDist",
-                      "ioValue": -2,
+                      "ioValue": -1.5,
                       "currentEquation": "-part_width/2"
                     },
                     {
@@ -3397,14 +3397,14 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.18926553672316385,
-      "y": 0.6506024096385542,
+      "x": 0.1956214689265537,
+      "y": 0.6265060240963854,
       "uniqueID": "id-747",
       "name": "Braces",
       "ioValues": [
         {
           "name": "Total_Depth",
-          "ioValue": 33
+          "ioValue": 27
         }
       ],
       "topLevel": false,
@@ -3539,7 +3539,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -12.5
+                  "ioValue": -9.5
                 },
                 {
                   "name": "zDist",
@@ -3577,7 +3577,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -12.5
+                  "ioValue": -9.5
                 },
                 {
                   "name": "zDist",
@@ -3601,7 +3601,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -13
+                  "ioValue": -10
                 },
                 {
                   "name": "zDist",
@@ -3711,7 +3711,7 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 30,
+                  "ioValue": 24,
                   "currentEquation": "Total_Depth - 3"
                 },
                 {
@@ -4134,7 +4134,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.5,
+                      "ioValue": -8.5,
                       "currentEquation": "-Total_Depth/2 + width_clear"
                     },
                     {
@@ -4160,7 +4160,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.875,
+                      "ioValue": -8.875,
                       "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/2"
                     },
                     {
@@ -4359,7 +4359,7 @@
                   "ioValues": [
                     {
                       "name": "Distance",
-                      "ioValue": 23,
+                      "ioValue": 17,
                       "currentEquation": "Total_Depth - 10"
                     },
                     {
@@ -4393,7 +4393,7 @@
                         },
                         {
                           "name": "distance",
-                          "ioValue": 23
+                          "ioValue": 17
                         },
                         {
                           "name": "spacing",
@@ -5667,7 +5667,7 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 30,
+                  "ioValue": 24,
                   "currentEquation": "Total_Depth - 3"
                 },
                 {
@@ -6090,7 +6090,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.5,
+                      "ioValue": -8.5,
                       "currentEquation": "-Total_Depth/2 + width_clear"
                     },
                     {
@@ -6116,7 +6116,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.875,
+                      "ioValue": -8.875,
                       "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/2"
                     },
                     {
@@ -6315,7 +6315,7 @@
                   "ioValues": [
                     {
                       "name": "Distance",
-                      "ioValue": 23,
+                      "ioValue": 17,
                       "currentEquation": "Total_Depth - 10"
                     },
                     {
@@ -6349,7 +6349,7 @@
                         },
                         {
                           "name": "distance",
-                          "ioValue": 23
+                          "ioValue": 17
                         },
                         {
                           "name": "spacing",
