@@ -80,8 +80,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.527542372881356,
-      "y": 0.536144578313253,
+      "x": 0.5225988700564972,
+      "y": 0.5572289156626505,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -228,7 +228,7 @@
         },
         {
           "atomType": "Difference",
-          "x": 0.663135593220339,
+          "x": 0.6694915254237288,
           "y": 0.5060240963855421,
           "uniqueID": "id-122",
           "ioValues": [
@@ -244,8 +244,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.2577683615819209,
-          "y": 0.3132530120481927,
+          "x": 0.2641242937853107,
+          "y": 0.29518072289156627,
           "uniqueID": "id-36",
           "name": "Rounded-rectangle-rep",
           "ioValues": [
@@ -259,7 +259,7 @@
             },
             {
               "name": "radius",
-              "ioValue": 6
+              "ioValue": 4
             },
             {
               "name": "height",
@@ -297,7 +297,7 @@
                 },
                 {
                   "name": "rad",
-                  "ioValue": 6
+                  "ioValue": 4
                 },
                 {
                   "name": "length",
@@ -2297,8 +2297,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.22979109900090824,
-      "y": 0.8042168674698795,
+      "x": 0.230225988700565,
+      "y": 0.8222891566265061,
       "uniqueID": "id-3032",
       "name": "Front_piece",
       "ioValues": [
@@ -2308,7 +2308,8 @@
         },
         {
           "name": "width_clear",
-          "ioValue": 10
+          "ioValue": 5,
+          "currentEquation": "5"
         }
       ],
       "topLevel": false,
@@ -2358,7 +2359,7 @@
         },
         {
           "atomType": "Move",
-          "x": 0.410535876475931,
+          "x": 0.4187853107344633,
           "y": 0.575301204819277,
           "uniqueID": "id-3157",
           "ioValues": [
@@ -2373,8 +2374,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 32.5,
-              "currentEquation": "Total_Width/2 - part_width"
+              "ioValue": 31.3,
+              "currentEquation": "Total_Width/2 - part_width *1.3"
             },
             {
               "name": "zDist",
@@ -2384,8 +2385,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.385593220338983,
-          "y": 0.3283132530120482,
+          "x": 0.3834745762711864,
+          "y": 0.3253012048192771,
           "uniqueID": "id-3163",
           "ioValues": [
             {
@@ -2398,8 +2399,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": -30,
-              "currentEquation": "-(Total_Width/2) +part_width + (width_clear/4)"
+              "ioValue": -31.3,
+              "currentEquation": "-(Total_Width/2) +part_width *1.3"
             },
             {
               "name": "zDist",
@@ -2425,8 +2426,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.7393278837420527,
-          "y": 0.45481927710843373,
+          "x": 0.7464689265536724,
+          "y": 0.463855421686747,
           "uniqueID": "id-3174",
           "ioValues": [
             {
@@ -2449,8 +2450,8 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.2189265536723164,
-          "y": 0.8012048192771084,
+          "x": 0.2175141242937853,
+          "y": 0.8222891566265061,
           "uniqueID": "id-3181",
           "ioValues": [
             {
@@ -2517,7 +2518,7 @@
               "ioValue": {
                 "geometry": [
                   {
-                    "geometry": "rotate-move-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-26-circle-22--26-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-4-8.8-move-rectangle-1.5-1.5--2--4.4-0-move-rectangle-1.5-1.5-2--4.4-0--2--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0--30-0-0-0-90",
+                    "geometry": "rotate-move-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-26-circle-22--26-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-4-8.8-move-rectangle-1.5-1.5--2--4.4-0-move-rectangle-1.5-1.5-2--4.4-0--2--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0--31.3-0-0-0-90",
                     "tags": [],
                     "bom": [],
                     "plane": {
@@ -2541,7 +2542,7 @@
                     "dimension": "3D"
                   },
                   {
-                    "geometry": "rotate-move-rotate-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-26-circle-22--26-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-4-8.8-move-rectangle-1.5-1.5--2--4.4-0-move-rectangle-1.5-1.5-2--4.4-0--2--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0-0-180-0.75-32.5-0-0-0-90",
+                    "geometry": "rotate-move-rotate-move-rotate-extrude-fuse-fuse-intersect-move-cut-circle-26-circle-22--26-0-0-move-rectangle-14.666666666666666-14.666666666666666-0-7.333333333333333-0-move-cut-cut-rectangle-4-8.8-move-rectangle-1.5-1.5--2--4.4-0-move-rectangle-1.5-1.5-2--4.4-0--2--4.4-0-move-rectangle-1.5-0.75--6.285714285714286-14.965986394557824-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75-90-0-90-0-0-8.05-0-0-180-0.75-31.3-0-0-0-90",
                     "tags": [],
                     "bom": [],
                     "plane": {
@@ -2645,8 +2646,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.8428701180744778,
-          "y": 0.7771084337349398,
+          "x": 0.8439265536723164,
+          "y": 0.7228915662650602,
           "uniqueID": "id-3206",
           "ioValues": [
             {
@@ -2659,12 +2660,13 @@
             },
             {
               "name": "yDist",
-              "ioValue": 16.5,
-              "currentEquation": "Total_Depth/2"
+              "ioValue": 14,
+              "currentEquation": "Total_Depth/2 - width_clear/2"
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 0.75,
+              "currentEquation": "Ply_thick"
             }
           ]
         },
@@ -2677,8 +2679,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.16348773841961853,
-          "y": 0.5,
+          "x": 0.1596045197740113,
+          "y": 0.4789156626506024,
           "uniqueID": "id-3036",
           "name": "Side_wall_part",
           "topLevel": false,
