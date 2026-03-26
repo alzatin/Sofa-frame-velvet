@@ -81,7 +81,7 @@
     {
       "atomType": "Assembly",
       "x": 0.7238873751135332,
-      "y": 0.3644578313253012,
+      "y": 0.3674698795180723,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -605,7 +605,7 @@
     {
       "atomType": "Molecule",
       "x": 0.2579473206176204,
-      "y": 0.41867469879518077,
+      "y": 0.41566265060240964,
       "uniqueID": "id-126",
       "name": "Side_wall",
       "ioValues": [
@@ -1554,8 +1554,8 @@
         },
         {
           "atomType": "Molecule",
-          "x": 0.14901129943502825,
-          "y": 0.7590361445783133,
+          "x": 0.12806539509536785,
+          "y": 0.6837349397590361,
           "uniqueID": "id-130",
           "name": "Side_wall_part",
           "topLevel": false,
@@ -3422,6 +3422,10 @@
           "name": "SBheight1",
           "ioValue": 4,
           "currentEquation": "4"
+        },
+        {
+          "name": "SBheight2",
+          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -3448,8 +3452,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.5543785310734464,
-          "y": 0.5090361445783133,
+          "x": 0.5567665758401453,
+          "y": 0.5180722891566265,
           "uniqueID": "id-2667",
           "ioValues": [
             {
@@ -3816,8 +3820,8 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.7574931880108992,
-              "y": 0.3855421686746988,
+              "x": 0.7593097184377839,
+              "y": 0.4006024096385542,
               "uniqueID": "id-2316",
               "ioValues": [
                 {
@@ -3831,17 +3835,13 @@
                 {
                   "name": "Shape 4",
                   "ioValue": null
-                },
-                {
-                  "name": "Shape 5",
-                  "ioValue": null
                 }
               ]
             },
             {
               "atomType": "Move",
-              "x": 0.620345140781108,
-              "y": 0.3734939759036145,
+              "x": 0.6185286103542235,
+              "y": 0.3463855421686747,
               "uniqueID": "id-2317",
               "ioValues": [
                 {
@@ -3850,7 +3850,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -35.875
+                  "ioValue": -31.875
                 },
                 {
                   "name": "yDist",
@@ -3858,17 +3858,18 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 13
+                  "ioValue": 10,
+                  "currentEquation": "SBheight2"
                 }
               ]
             },
             {
               "atomType": "Equation",
-              "x": 0.4396003633060854,
-              "y": 0.14457831325301204,
+              "x": 0.4214350590372389,
+              "y": 0.1355421686746988,
               "uniqueID": "id-2318",
-              "name": "-Total_Width/2 - Ply_thick/2 +1",
-              "currentEquation": "-Total_Width/2 - Ply_thick/2 +1"
+              "name": "-Total_Width/2 + 1 + part_width - Ply_thick/2",
+              "currentEquation": "-Total_Width/2 + 1 + part_width - Ply_thick/2"
             },
             {
               "atomType": "Move",
@@ -3882,7 +3883,7 @@
                 },
                 {
                   "name": "xDist",
-                  "ioValue": -35.875
+                  "ioValue": -31.875
                 },
                 {
                   "name": "yDist",
@@ -3921,8 +3922,8 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.46398305084745767,
-              "y": 0.5903614457831325,
+              "x": 0.44141689373297005,
+              "y": 0.677710843373494,
               "uniqueID": "id-2321",
               "name": "-Total_Width/2 + y",
               "ioValues": [
@@ -5711,11 +5712,6 @@
               "ap2Name": "geometry",
               "ap1ID": "id-2659",
               "ap2ID": "id-2315"
-            },
-            {
-              "ap2Name": "Shape 5",
-              "ap1ID": "id-2358",
-              "ap2ID": "id-2316"
             }
           ],
           "fileTypeVersion": 1
@@ -7679,9 +7675,16 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.6153846153846154,
+          "y": 0.5963855421686747,
           "uniqueID": "id-5321",
           "name": "SBheight1"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.688693234476367,
+          "uniqueID": "id-5325",
+          "name": "SBheight2"
         }
       ],
       "allConnectors": [
