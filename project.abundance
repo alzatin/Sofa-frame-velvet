@@ -7,7 +7,7 @@
   "ioValues": [
     {
       "name": "Total_Depth",
-      "ioValue": 33
+      "ioValue": 30
     },
     {
       "name": "Total_Width",
@@ -80,8 +80,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.527542372881356,
-      "y": 0.5391566265060241,
+      "x": 0.5268361581920904,
+      "y": 0.5060240963855421,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -115,7 +115,7 @@
         },
         {
           "name": "Total_Depth",
-          "ioValue": 33
+          "ioValue": 30
         },
         {
           "name": "Wing_Width",
@@ -255,7 +255,7 @@
             },
             {
               "name": "length",
-              "ioValue": 33
+              "ioValue": 30
             },
             {
               "name": "radius",
@@ -301,7 +301,7 @@
                 },
                 {
                   "name": "length",
-                  "ioValue": 33
+                  "ioValue": 30
                 }
               ],
               "codeVersion": 1,
@@ -410,7 +410,7 @@
             },
             {
               "name": "length",
-              "ioValue": 19.411764705882355,
+              "ioValue": 17.647058823529413,
               "currentEquation": "Total_Depth/1.7"
             },
             {
@@ -457,7 +457,7 @@
                 },
                 {
                   "name": "length",
-                  "ioValue": 19.411764705882355
+                  "ioValue": 17.647058823529413
                 }
               ],
               "codeVersion": 1,
@@ -855,7 +855,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -12.5,
+              "ioValue": -11,
               "currentEquation": "-Total_Depth/2 + width_clear"
             },
             {
@@ -881,7 +881,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": -12.875,
+              "ioValue": -11.375,
               "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/2"
             },
             {
@@ -1080,7 +1080,7 @@
           "ioValues": [
             {
               "name": "Distance",
-              "ioValue": 23,
+              "ioValue": 20,
               "currentEquation": "Total_Depth - 10"
             },
             {
@@ -1114,7 +1114,7 @@
                 },
                 {
                   "name": "distance",
-                  "ioValue": 23
+                  "ioValue": 20
                 },
                 {
                   "name": "spacing",
@@ -2450,14 +2450,14 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.2175141242937853,
-          "y": 0.8222891566265061,
+          "x": 0.21257062146892658,
+          "y": 0.8403614457831325,
           "uniqueID": "id-3181",
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 73,
-              "currentEquation": "Total_Width"
+              "ioValue": 68,
+              "currentEquation": "Total_Width - width_clear"
             },
             {
               "name": "y length",
@@ -2485,8 +2485,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.538135593220339,
-          "y": 0.7409638554216867,
+          "x": 0.5374293785310734,
+          "y": 0.7228915662650602,
           "uniqueID": "id-3189",
           "ioValues": [
             {
@@ -2592,7 +2592,7 @@
             {
               "name": "Shape 2",
               "ioValue": {
-                "geometry": "move-rotate-extrude-rectangle-73-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75--90-0-0-0-0-2",
+                "geometry": "move-rotate-extrude-rectangle-68-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-0.75--90-0-0-0-0-2",
                 "dimension": "3D",
                 "plane": {
                   "origin": [
@@ -2660,7 +2660,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": 14,
+              "ioValue": 12.5,
               "currentEquation": "Total_Depth/2 - width_clear/2"
             },
             {
@@ -3400,7 +3400,7 @@
       "ioValues": [
         {
           "name": "Total_Depth",
-          "ioValue": 33
+          "ioValue": 30
         }
       ],
       "topLevel": false,
@@ -3535,7 +3535,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -12.5
+                  "ioValue": -11
                 },
                 {
                   "name": "zDist",
@@ -3573,7 +3573,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -12.5
+                  "ioValue": -11
                 },
                 {
                   "name": "zDist",
@@ -3597,7 +3597,7 @@
                 },
                 {
                   "name": "yDist",
-                  "ioValue": -13
+                  "ioValue": -11.5
                 },
                 {
                   "name": "zDist",
@@ -3707,7 +3707,7 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 30,
+                  "ioValue": 27,
                   "currentEquation": "Total_Depth - 3"
                 },
                 {
@@ -4130,7 +4130,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.5,
+                      "ioValue": -10,
                       "currentEquation": "-Total_Depth/2 + width_clear"
                     },
                     {
@@ -4156,7 +4156,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.875,
+                      "ioValue": -10.375,
                       "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/2"
                     },
                     {
@@ -4355,7 +4355,7 @@
                   "ioValues": [
                     {
                       "name": "Distance",
-                      "ioValue": 23,
+                      "ioValue": 20,
                       "currentEquation": "Total_Depth - 10"
                     },
                     {
@@ -4389,7 +4389,7 @@
                         },
                         {
                           "name": "distance",
-                          "ioValue": 23
+                          "ioValue": 20
                         },
                         {
                           "name": "spacing",
@@ -5663,7 +5663,7 @@
               "ioValues": [
                 {
                   "name": "x length",
-                  "ioValue": 30,
+                  "ioValue": 27,
                   "currentEquation": "Total_Depth - 3"
                 },
                 {
@@ -6086,7 +6086,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.5,
+                      "ioValue": -10,
                       "currentEquation": "-Total_Depth/2 + width_clear"
                     },
                     {
@@ -6112,7 +6112,7 @@
                     },
                     {
                       "name": "yDist",
-                      "ioValue": -11.875,
+                      "ioValue": -10.375,
                       "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/2"
                     },
                     {
@@ -6311,7 +6311,7 @@
                   "ioValues": [
                     {
                       "name": "Distance",
-                      "ioValue": 23,
+                      "ioValue": 20,
                       "currentEquation": "Total_Depth - 10"
                     },
                     {
@@ -6345,7 +6345,7 @@
                         },
                         {
                           "name": "distance",
-                          "ioValue": 23
+                          "ioValue": 20
                         },
                         {
                           "name": "spacing",
