@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "Total_Depth",
-      "ioValue": 30
+      "ioValue": 30,
+      "currentEquation": "30"
     },
     {
       "name": "Total_Width",
@@ -80,8 +81,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.5268361581920904,
-      "y": 0.5060240963855421,
+      "x": 0.530367231638418,
+      "y": 0.5542168674698795,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -604,8 +605,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2507062146892655,
-      "y": 0.3373493975903614,
+      "x": 0.2542372881355932,
+      "y": 0.33433734939759036,
       "uniqueID": "id-126",
       "name": "Side_wall",
       "ioValues": [
@@ -641,8 +642,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.777542372881356,
-          "y": 0.34939759036144574,
+          "x": 0.7916666666666667,
+          "y": 0.3192771084337349,
           "uniqueID": "id-585",
           "ioValues": [
             {
@@ -669,8 +670,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.5148305084745762,
-          "y": 0.8614457831325302,
+          "x": 0.510593220338983,
+          "y": 0.8734939759036144,
           "uniqueID": "id-628",
           "ioValues": [
             {
@@ -717,8 +718,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6857344632768362,
-          "y": 0.8584337349397589,
+          "x": 0.6807909604519774,
+          "y": 0.8373493975903615,
           "uniqueID": "id-640",
           "ioValues": [
             {
@@ -742,8 +743,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.653954802259887,
-          "y": 0.6837349397590361,
+          "x": 0.6793785310734463,
+          "y": 0.6234939759036144,
           "uniqueID": "id-646",
           "ioValues": [
             {
@@ -752,8 +753,8 @@
             },
             {
               "name": "xDist",
-              "ioValue": 35.166666666666664,
-              "currentEquation": "Total_Width/2 - width_clear/3"
+              "ioValue": 36.5,
+              "currentEquation": "Total_Width/2"
             },
             {
               "name": "yDist",
@@ -767,8 +768,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.6221751412429378,
-          "y": 0.4066265060240964,
+          "x": 0.6214689265536723,
+          "y": 0.39759036144578314,
           "uniqueID": "id-707",
           "ioValues": [
             {
@@ -782,7 +783,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": -12
+              "ioValue": -10.909090909090908,
+              "currentEquation": "-Total_Depth/2.75"
             },
             {
               "name": "zDist",
@@ -840,8 +842,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4540960451977401,
-          "y": 0.4337349397590362,
+          "x": 0.4562146892655367,
+          "y": 0.4427710843373494,
           "uniqueID": "id-725",
           "ioValues": [
             {
@@ -866,8 +868,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4180790960451977,
-          "y": 0.3132530120481927,
+          "x": 0.41949152542372886,
+          "y": 0.3042168674698795,
           "uniqueID": "id-732",
           "ioValues": [
             {
@@ -881,8 +883,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": -11.375,
-              "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/2"
+              "ioValue": -11.1875,
+              "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/4"
             },
             {
               "name": "zDist",
@@ -1073,8 +1075,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.3615819209039548,
-          "y": 0.786144578313253,
+          "x": 0.3629943502824859,
+          "y": 0.7710843373493976,
           "uniqueID": "id-597",
           "name": "Linear_Pattern__Distance_",
           "ioValues": [
@@ -3393,8 +3395,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2245762711864407,
-      "y": 0.5331325301204819,
+      "x": 0.18926553672316385,
+      "y": 0.6506024096385542,
       "uniqueID": "id-747",
       "name": "Braces",
       "ioValues": [
