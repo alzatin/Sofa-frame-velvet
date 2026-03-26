@@ -80,8 +80,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.5225988700564972,
-      "y": 0.5572289156626505,
+      "x": 0.527542372881356,
+      "y": 0.5391566265060241,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -615,7 +615,7 @@
         },
         {
           "name": "width_clear",
-          "ioValue": 5
+          "ioValue": 4
         }
       ],
       "topLevel": false,
@@ -727,7 +727,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": -34.833333333333336,
+              "ioValue": -35.166666666666664,
               "currentEquation": "-Total_Width/2 + width_clear/3"
             },
             {
@@ -752,7 +752,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": 34.833333333333336,
+              "ioValue": 35.166666666666664,
               "currentEquation": "Total_Width/2 - width_clear/3"
             },
             {
@@ -850,12 +850,12 @@
             },
             {
               "name": "xDist",
-              "ioValue": -31.5,
+              "ioValue": -32.5,
               "currentEquation": "-Total_Width/2 + width_clear"
             },
             {
               "name": "yDist",
-              "ioValue": -11.5,
+              "ioValue": -12.5,
               "currentEquation": "-Total_Depth/2 + width_clear"
             },
             {
@@ -876,12 +876,12 @@
             },
             {
               "name": "xDist",
-              "ioValue": 31.5,
+              "ioValue": 32.5,
               "currentEquation": "Total_Width/2 - width_clear"
             },
             {
               "name": "yDist",
-              "ioValue": -11.875,
+              "ioValue": -12.875,
               "currentEquation": "-Total_Depth/2 + width_clear - Ply_thick/2"
             },
             {
@@ -893,7 +893,7 @@
         {
           "atomType": "Input",
           "x": 0.025384615384615384,
-          "y": 0.24615384615384617,
+          "y": 0.23795180722891565,
           "uniqueID": "id-739",
           "name": "width_clear"
         },
