@@ -4,6 +4,15 @@
 
 ![](/project.svg)
 
+## Inputs
+
+- **Total_Depth** (number)
+- **Total_Width** (number)
+- **Total_Height** (range)
+- **Wing_Width** (number)
+- **Ply_thick** (number)
+
+
 
 
  
