@@ -6,11 +6,11 @@
 
 ## Inputs
 
-- **Total_Depth** (number)
-- **Total_Width** (number)
 - **Total_Height** (range)
 - **Wing_Width** (number)
+- **Total_Depth** (number)
 - **Ply_thick** (number)
+- **Total_Width** (number)
 
 
 
