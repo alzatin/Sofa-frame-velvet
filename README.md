@@ -2,7 +2,7 @@
 
 # Sofa-frame-velvet
 
-![](/project.svg)
+![](/project.png)
 
 ## Inputs
 
