@@ -6,14 +6,6 @@
   "name": "Sofa-frame-velvet",
   "ioValues": [
     {
-      "name": "Total_Depth",
-      "ioValue": 35
-    },
-    {
-      "name": "Total_Width",
-      "ioValue": 73
-    },
-    {
       "name": "Total_Height",
       "ioValue": 24
     },
@@ -22,8 +14,16 @@
       "ioValue": 10
     },
     {
+      "name": "Total_Depth",
+      "ioValue": 35
+    },
+    {
       "name": "Ply_thick",
       "ioValue": 0.75
+    },
+    {
+      "name": "Total_Width",
+      "ioValue": 73
     }
   ],
   "topLevel": true,
@@ -31,7 +31,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.3384615384615385,
+      "y": 0.15384615384615385,
       "uniqueID": "id-10",
       "name": "Total_Height",
       "type": "range",
@@ -1735,7 +1735,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.4307692307692308,
+      "y": 0.24615384615384617,
       "uniqueID": "id-13",
       "name": "Wing_Width"
     },
@@ -2192,21 +2192,6 @@
       ],
       "allConnectors": [
         {
-          "ap2Name": "width",
-          "ap1ID": "id-20",
-          "ap2ID": "id-36"
-        },
-        {
-          "ap2Name": "length",
-          "ap1ID": "id-23",
-          "ap2ID": "id-36"
-        },
-        {
-          "ap2Name": "remove",
-          "ap1ID": "id-81",
-          "ap2ID": "id-122"
-        },
-        {
           "ap2Name": "Shape 1",
           "ap1ID": "id-109",
           "ap2ID": "id-81"
@@ -2220,6 +2205,21 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-122",
           "ap2ID": "id-18"
+        },
+        {
+          "ap2Name": "width",
+          "ap1ID": "id-20",
+          "ap2ID": "id-36"
+        },
+        {
+          "ap2Name": "length",
+          "ap1ID": "id-23",
+          "ap2ID": "id-36"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-81",
+          "ap2ID": "id-122"
         },
         {
           "ap2Name": "retain",
@@ -3349,7 +3349,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.15384615384615385,
+      "y": 0.3384615384615385,
       "uniqueID": "id-4",
       "name": "Total_Depth"
     },
@@ -3783,7 +3783,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.5230769230769231,
+      "y": 0.4307692307692308,
       "uniqueID": "id-54",
       "name": "Ply_thick"
     },
@@ -4039,7 +4039,7 @@
     {
       "atomType": "Input",
       "x": 0.025384615384615384,
-      "y": 0.24615384615384617,
+      "y": 0.5230769230769231,
       "uniqueID": "id-7",
       "name": "Total_Width"
     },
@@ -4194,6 +4194,12 @@
               "y": 0.20180722891566263,
               "uniqueID": "id-1666",
               "name": "-Total_Depth/2.75 - part_width/4",
+              "ioValues": [
+                {
+                  "name": "part_width",
+                  "ioValue": 1
+                }
+              ],
               "currentEquation": "-Total_Depth/2.75 - part_width/4"
             },
             {
@@ -4252,6 +4258,12 @@
               "y": 0.7439759036144579,
               "uniqueID": "id-1740",
               "name": "-Total_Depth/2.75 - part_width/1.75",
+              "ioValues": [
+                {
+                  "name": "part_width",
+                  "ioValue": 1
+                }
+              ],
               "currentEquation": "-Total_Depth/2.75 - part_width/1.75"
             },
             {
@@ -4448,6 +4460,12 @@
               "y": 0.10843373493975905,
               "uniqueID": "id-2318",
               "name": "-Total_Width/2 + part_width - 1",
+              "ioValues": [
+                {
+                  "name": "part_width",
+                  "ioValue": 1
+                }
+              ],
               "currentEquation": "-Total_Width/2 + part_width - 1"
             },
             {
@@ -4505,6 +4523,12 @@
               "y": 0.6987951807228915,
               "uniqueID": "id-2321",
               "name": "-Total_Width/2 + part_width/2",
+              "ioValues": [
+                {
+                  "name": "part_width",
+                  "ioValue": 1
+                }
+              ],
               "currentEquation": "-Total_Width/2 + part_width/2"
             },
             {
@@ -8347,6 +8371,11 @@
   ],
   "allConnectors": [
     {
+      "ap2Name": "Wing_Width",
+      "ap1ID": "id-13",
+      "ap2ID": "id-16"
+    },
+    {
       "ap2Name": "Total_Depth",
       "ap1ID": "id-4",
       "ap2ID": "id-16"
@@ -8357,16 +8386,6 @@
       "ap2ID": "id-747"
     },
     {
-      "ap2Name": "Total_Width",
-      "ap1ID": "id-7",
-      "ap2ID": "id-16"
-    },
-    {
-      "ap2Name": "Wing_Width",
-      "ap1ID": "id-13",
-      "ap2ID": "id-16"
-    },
-    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-5419",
       "ap2ID": "id-2"
@@ -8375,6 +8394,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-5419",
       "ap2ID": "id-6522"
+    },
+    {
+      "ap2Name": "Total_Width",
+      "ap1ID": "id-7",
+      "ap2ID": "id-16"
     },
     {
       "ap2Name": "Shape 1",
